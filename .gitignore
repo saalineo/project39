@@ -5,3 +5,10 @@ __pycache__/
 doc/
 *.onnx
 *.pkg
+studio/packager/keys/
+venv/
+.venv/
+env/
+.env/
+studio/ci/audit-log.jsonl
+studio/validation/results/

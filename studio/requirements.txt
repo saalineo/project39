@@ -3,3 +3,4 @@ onnxruntime==1.17.0
 numpy==1.26.4
 jiwer==3.0.3
 torchaudio==2.2.0
+cryptography==42.0.5
