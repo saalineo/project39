@@ -1,14 +1,76 @@
+# Private signing keys & HSM certificates
+studio/packager/keys/
+keys/
+keystore/
+*.key
+*.pem
+*.priv
+*.pk8
+
+# Biometric Speaker Reference Audio & Embeddings (GDPR / DPDP PII Protection)
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.aac
+reference_audio/
+recordings/
+biometrics/
+embeddings/
+
+# Environment configuration & secret credentials
+.env
+.env.*
+*.env
+secrets.json
+credentials.json
+*.p12
+*.pfx
+
+# Rust target directories
+target/
+**/target/
+
+# Local model weights, ONNX graphs, and signed packages
 models/
 artifacts/
-target/
-__pycache__/
-doc/
 *.onnx
 *.pkg
-studio/packager/keys/
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.pb
+tampered_model.pkg
+
+# On-device Flash / Artifact Store test stand-ins
+artifact_store_data/
+**/artifact_store_data/
+tmp_install/
+
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual Environments
 venv/
 .venv/
 env/
 .env/
+
+*.log
 studio/ci/audit-log.jsonl
 studio/validation/results/
+
+.DS_Store
+doc/
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

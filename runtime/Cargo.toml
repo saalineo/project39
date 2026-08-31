@@ -8,3 +8,22 @@ members = [
     "crates/bind",
 ]
 resolver = "2"
+
+[patch.crates-io]
+pem-rfc7468 = { path = "patches/pem-rfc7468" }
+zeroize = { path = "patches/zeroize" }
+base64ct = { path = "patches/base64ct" }
+ureq-proto = { path = "patches/ureq-proto" }
+ort = { path = "patches/ort" }
+ort-sys = { path = "patches/ort-sys" }
+der = { path = "patches/der" }
+ureq = { path = "patches/ureq" }
+lzma-rust2 = { path = "patches/lzma-rust2" }
+
+
+
+
+
+
+
+

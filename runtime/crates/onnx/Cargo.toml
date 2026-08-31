@@ -3,6 +3,15 @@ name = "onnx"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+ort = { version = "2.0.0-rc.13", features = ["std", "ndarray"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tar = "0.4"
+sha2 = "0.10"
+hex = "0.4"
+thiserror = "1.0"
+ndarray = "0.17"
+openssl-sys = "=0.9.102"
+lzma-rust2 = { version = "=0.10.0", default-features = false, features = ["std"] }
+crc = "=3.3.0"
